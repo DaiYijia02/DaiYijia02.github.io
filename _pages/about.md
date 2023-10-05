@@ -2,25 +2,23 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
+subtitle: CS & Physics undergrad @ <a href='https://www.cornell.edu'>Cornell</a>. 问心无愧.
 
 profile:
-  align: right
-  image: prof_pic.jpg
+  align: center
+  image: prof_pic_yijia.jpeg
   image_circular: false # crops the image to make it circular
-  address: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+  address:
+    <p> Currently in Ithaca, NY. </p>
 
-news: true  # includes a list of news items
-latest_posts: true  # includes a list of the newest posts
+news: false  # includes a list of news items
+latest_posts: false  # includes a list of the newest posts
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+👋 ▫️ 👍 👀 ❕
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+Learning is key for any type of intelligence. I love thinking about how human learns. And whether that is transferable to machines. Questions like `Why ML requires more data than human?` intrigue me.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+My research interests are broadly learning a robust human representation, and aligning machine to human reasoning. Currently, I study reinforcement learning and dynamical systems. Sample-efficient [low-rank representation learning](https://github.com/DaiYijia02/lowrank-representation-deep-learning-recsys) for dynamical and unobserved user states, computationally-efficient [contextual logistic bandits](http://reddit.com) with ranking, and "algorithm-of-thoughts" styled [personalized question-understanding system](http://reddit.com) are examples of what I am working on.

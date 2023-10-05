@@ -1,4 +1,7 @@
 source 'https://rubygems.org'
+gem 'nokogiri'
+gem 'rack', '~> 2.2.4'
+gem 'rspec'
 group :jekyll_plugins do
     gem 'classifier-reborn'
     gem 'jekyll'
@@ -16,7 +19,7 @@ group :jekyll_plugins do
     gem 'jekyll-toc'
     gem 'jekyll-twitter-plugin'
     gem 'jemoji'
-    gem 'mini_racer'
+    gem "mini_racer"
     gem 'unicode_utils'
     gem 'webrick'
 end
