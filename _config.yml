@@ -16,7 +16,7 @@ keywords: >
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: 🌲  # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
-url: https://DaiYijia02.github.io # the base hostname & protocol for your site
+url: https://daiyijia02.github.io # the base hostname & protocol for your site
 baseurl: # the subpath of your site, e.g. /blog/
 last_updated: false # set to true if you want to display last updated in the footer
 impressum_path:  # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
@@ -112,7 +112,7 @@ contact_note: >
 google_analytics:  # your Google Analytics measurement ID (format: G-XXXXXXXXXX)
 panelbear_analytics:  # panelbear analytics site ID (format: XXXXXXXXX)
 
-google_site_verification:  # your google-site-verification ID (Google Search Console)
+google_site_verification: daiyijia02@gmail.com # your google-site-verification ID (Google Search Console)
 bing_site_verification:  # out your bing-site-verification ID (Bing Webmaster)
 
 # -----------------------------------------------------------------------------
