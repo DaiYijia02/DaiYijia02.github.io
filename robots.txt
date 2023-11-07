@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://DaiYijia02.github.io/sitemap.xml
+Sitemap: https://daiyijia02.github.io/sitemap.xml
