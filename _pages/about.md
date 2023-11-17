@@ -23,4 +23,4 @@ Learning is key for any type of intelligence. I love thinking about how human le
 
 My research interests are broadly learning robust knowledge representations, and aligning machine to human reasoning. Currently, I study reinforcement learning and dynamical systems. Sample-efficient [low-rank representation learning](https://github.com/DaiYijia02/lowrank-representation-deep-learning-recsys) for dynamical and unobserved user states, computationally-efficient [weighted logistic bandits](https://github.com/DaiYijia02/weighted-logistic-bandit), and "algorithm-of-thoughts" styled [personalized question-understanding system](https://github.com/DaiYijia02/wise-person) are examples of what I am working on.
 
-On my spare time, I enjoy Chinese folk dances and hold responsibility to the organization of [Amber](https://www.cornellamberdance.com). I also appreciate what [yoga](https://bohobeautiful.life) and buddhism have brought to me on a daily basis.
+On my spare time, I enjoy Chinese folk dances and hold responsibility to the organization of [Amber](https://www.cornellamberdance.com). I also appreciate what yoga and buddhism have brought to me on a daily basis.
