@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: CS & Physics undergrad @ <a href='https://www.cornell.edu'>Cornell</a>. 问心无愧.
+subtitle: CS PhD @ <a href='https://www.cornell.edu'>Cornell</a>. 问心无愧.
 
 
 profile:
