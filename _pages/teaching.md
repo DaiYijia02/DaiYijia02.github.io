@@ -21,7 +21,7 @@ nav_order: 2
         </span>
       </div>
     </div>
-    <h6 class="font-italic mt-2 mt-sm-0">Fall 2024: Teaching Assistant</h6>
+    <h6 class="font-italic mt-2 mt-sm-0">Fall 2024: Graduate Teaching Assistant</h6>
     <h6 class="mt-2 mt-sm-0">The intro to machine learning <a href="https://www.cs.cornell.edu/courses/cs3780/2024fa/" target="_blank">core course</a> at Cornell, taught by Prof. <a href="https://sdean.website/" target="_blank">Sarah Dean</a>, Prof. <a href="https://www.cs.cornell.edu/people/tj/" target="_blank">Thorsten Joachims</a>, and Prof. <a href="https://johnthickstun.com" target="_blank">John Thickstun</a>.</h6>
   </div>
 </div>
