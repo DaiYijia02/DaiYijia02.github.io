@@ -5,7 +5,7 @@
       eprint={2410.18870},
       archivePrefix={arXiv},
       primaryClass={cs.IR},
-      html={https://arxiv.org/abs/2410.18870}, 
+      html={https://arxiv.org/pdf/2410.18870}, 
       preview={llm_training_v3.pdf},
       abstract={There is a growing interest in natural language-based user profiles for recommender systems, which aims to enhance transparency and scrutability compared with embedding-based methods. Existing studies primarily generate these profiles using zero-shot inference from large language models (LLMs), but their quality remains insufficient, leading to suboptimal recommendation performance. In this paper, we introduce LangPTune, the first end-to-end training framework to optimize LLM-generated user profiles. Our method significantly outperforms zero-shot approaches by explicitly training the LLM for the recommendation objective. Through extensive evaluations across diverse training configurations and benchmarks, we demonstrate that LangPTune not only surpasses zero-shot baselines but also matches the performance of state-of-the-art embedding-based methods. Finally, we investigate whether the training procedure preserves the interpretability of these profiles compared to zero-shot inference through both GPT-4 simulations and crowdworker user studies.}
 }
@@ -18,7 +18,7 @@
       eprint={2402.15623},
       archivePrefix={arXiv},
       primaryClass={cs.CL},
-      html={https://arxiv.org/abs/2402.15623}, 
+      html={https://arxiv.org/pdf/2402.15623}, 
       preview={pipeline_v1.pdf},
       abstract={Most conventional recommendation methods (e.g., matrix factorization) represent user profiles as high-dimensional vectors. Unfortunately, these vectors lack interpretability and steerability, and often perform poorly in cold-start settings. To address these shortcomings, we explore the use of user profiles that are represented as human-readable text. We propose the Language-based Factorization Model (LFM), which is essentially an encoder/decoder model where both the encoder and the decoder are large language models (LLMs). The encoder LLM generates a compact natural-language profile of the user's interests from the user's rating history. The decoder LLM uses this summary profile to complete predictive downstream tasks. We evaluate our LFM approach on the MovieLens dataset, comparing it against matrix factorization and an LLM model that directly predicts from the user's rating history. In cold-start settings, we find that our method can have higher accuracy than matrix factorization. Furthermore, we find that generating a compact and human-readable summary often performs comparably with or better than direct LLM prediction, while enjoying better interpretability and shorter model input length. Our results motivate a number of future research directions and potential improvements.}
 }
@@ -30,7 +30,7 @@
   conference={ICML},
   eprint={2309.08622},
   preview={recsys_flowchart.gif},
-  html={https://arxiv.org/abs/2309.08622},
+  html={https://arxiv.org/pdf/2309.08622},
   poster={poster.pdf},
   selected={true},
   abstract={Reinforcement learning (RL) in recommendation systems offers the potential to optimize recommendations for long-term user engagement. However, the environment often involves large state and action spaces, which makes it hard to efficiently learn and explore. In this work, we propose a sample-efficient representation learning algorithm, using the standard slate recommendation setup, to treat this as an online RL problem with low-rank Markov decision processes (MDPs). We also construct the recommender simulation environment with the proposed setup and sampling method.}
@@ -43,7 +43,7 @@
       eprint={2312.00267},
       archivePrefix={arXiv},
       primaryClass={cs.LG},
-      html={https://arxiv.org/abs/2312.00267},
+      html={https://arxiv.org/pdf/2312.00267},
       preview={ae.png},
       selected={true},
       abstract={Preference-based feedback is important for many applications in reinforcement learning where direct evaluation of a reward function is not feasible. A notable recent example arises in reinforcement learning from human feedback (RLHF) on large language models. For many applications of RLHF, the cost of acquiring the human feedback can be substantial. In this work, we take advantage of the fact that one can often choose contexts at which to obtain human feedback in order to most efficiently identify a good policy, and formalize this as an offline contextual dueling bandit problem. We give an upper-confidence-bound style algorithm for this problem and prove a polynomial worst-case regret bound. We then provide empirical confirmation in a synthetic setting that our approach outperforms existing methods. After, we extend the setting and methodology for practical use in RLHF training of large language models. Here, our method is able to reach better performance with fewer samples of human preferences than multiple baselines on three real-world datasets.}
