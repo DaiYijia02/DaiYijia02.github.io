@@ -7,7 +7,7 @@ subtitle: CS PhD @ <a href='https://www.cornell.edu'>Cornell</a>. 问心无愧.
 
 profile:
   align: center
-  image: prof_pic_yijia.jpeg
+  image: yijia_looking.jpg
   image_circular: false # crops the image to make it circular
   address: 
 
