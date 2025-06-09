@@ -16,7 +16,7 @@ nav_order: 2
         <h5 class="font-weight-bold">Introduction to Machine Learning</h5>
       </div>
       <div class="col-sm-2 text-left text-sm-right">
-        <span class="badge font-weight-bold primary-color-dark darken-1 text-uppercase align-middle">
+        <span class="badge font-weight-bold text-uppercase align-middle">
             CS 3780/5780
         </span>
       </div>
@@ -33,7 +33,7 @@ nav_order: 2
         <h5 class="font-weight-bold">Introduction to Reinforcement Learning</h5>
       </div>
       <div class="col-sm-2 text-left text-sm-right">
-        <span class="badge font-weight-bold primary-color-dark darken-1 text-uppercase align-middle">
+        <span class="badge font-weight-bold text-uppercase align-middle">
             CS 4789
         </span>
       </div>
@@ -51,7 +51,7 @@ nav_order: 2
         <h5 class="font-weight-bold">Advanced Machine Learning</h5>
       </div>
       <div class="col-sm-2 text-left text-sm-right">
-        <span class="badge font-weight-bold primary-color-dark darken-1 text-uppercase align-middle">
+        <span class="badge font-weight-bold text-uppercase align-middle">
             CS 6780
         </span>
       </div>
@@ -68,7 +68,7 @@ nav_order: 2
         <h5 class="font-weight-bold">Introduction to Analysis of Algorithms</h5>
       </div>
       <div class="col-sm-2 text-left text-sm-right">
-        <span class="badge font-weight-bold primary-color-dark darken-1 text-uppercase align-middle">
+        <span class="badge font-weight-bold text-uppercase align-middle">
             CS 4820
         </span>
       </div>
@@ -85,7 +85,7 @@ nav_order: 2
         <h5 class="font-weight-bold">Object-Oriented Programming and Data Structures</h5>
       </div>
       <div class="col-sm-2 text-left text-sm-right">
-        <span class="badge font-weight-bold primary-color-dark darken-1 text-uppercase align-middle">
+        <span class="badge font-weight-bold text-uppercase align-middle">
             CS 2110
         </span>
       </div>
@@ -102,7 +102,7 @@ nav_order: 2
         <h5 class="font-weight-bold">Discrete Structures</h5>
       </div>
       <div class="col-sm-2 text-left text-sm-right">
-        <span class="badge font-weight-bold primary-color-dark darken-1 text-uppercase align-middle">
+        <span class="badge font-weight-bold text-uppercase align-middle">
             CS 2800
         </span>
       </div>
@@ -119,7 +119,7 @@ nav_order: 2
         <h5 class="font-weight-bold">Linear Algebra</h5>
       </div>
       <div class="col-sm-2 text-left text-sm-right">
-        <span class="badge font-weight-bold primary-color-dark darken-1 text-uppercase align-middle">
+        <span class="badge font-weight-bold text-uppercase align-middle">
             MATH 2940
         </span>
       </div>

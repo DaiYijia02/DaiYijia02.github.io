@@ -1034,3 +1034,18 @@ nav[data-toggle="toc"] {
     padding-top: 0.5rem;
   }
 }
+
+// Badge
+.badge {
+  background-color: var(--global-theme-color);
+  color: var(--global-bg-color);
+  font-weight: 500;
+  padding: 0.5em 0.8em;
+  border-radius: 4px;
+}
+
+.badge:hover {
+  background-color: var(--global-hover-color);
+  color: var(--global-bg-color);
+  text-decoration: none;
+}
