@@ -58,8 +58,35 @@ function initShootingStars() {
         transform: translateX(0) translateY(0) rotate(45deg);
         opacity: 1;
       }
+      20% {
+        opacity: 1;
+      }
+      30% {
+        opacity: 0.95;
+      }
+      40% {
+        opacity: 0.9;
+      }
+      50% {
+        opacity: 0.8;
+      }
+      60% {
+        opacity: 0.7;
+      }
+      70% {
+        opacity: 0.5;
+      }
+      80% {
+        opacity: 0.3;
+      }
+      90% {
+        opacity: 0.15;
+      }
+      95% {
+        opacity: 0.05;
+      }
       100% {
-        transform: translateX(300px) translateY(400px) rotate(45deg);
+        transform: translateX(100px) translateY(200px) rotate(45deg);
         opacity: 0;
       }
     }
@@ -67,6 +94,33 @@ function initShootingStars() {
       0% {
         transform: translateX(0) translateY(0) rotate(45deg);
         opacity: 1;
+      }
+      20% {
+        opacity: 1;
+      }
+      30% {
+        opacity: 0.95;
+      }
+      40% {
+        opacity: 0.9;
+      }
+      50% {
+        opacity: 0.8;
+      }
+      60% {
+        opacity: 0.7;
+      }
+      70% {
+        opacity: 0.5;
+      }
+      80% {
+        opacity: 0.3;
+      }
+      90% {
+        opacity: 0.15;
+      }
+      95% {
+        opacity: 0.05;
       }
       100% {
         transform: translateX(300px) translateY(400px) rotate(45deg);
