@@ -86,7 +86,7 @@ function initShootingStars() {
         opacity: 0.05;
       }
       100% {
-        transform: translateX(100px) translateY(200px) rotate(45deg);
+        transform: translateX(300px) translateY(400px) rotate(45deg);
         opacity: 0;
       }
     }

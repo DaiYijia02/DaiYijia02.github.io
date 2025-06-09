@@ -39,4 +39,16 @@
     transform: translateX(400px) translateY(400px) rotate(45deg);
     opacity: 0;
   }
+}
+
+// Dark mode styles
+@media (prefers-color-scheme: dark) {
+  .star {
+    background: var(--global-theme-color);
+    box-shadow: 0 0 2px var(--global-theme-color);
+  }
+
+  .star::before {
+    background: linear-gradient(90deg, transparent, var(--global-theme-color));
+  }
 } 
