@@ -11,6 +11,90 @@ body {
     scroll-margin-top: 66px;
   }
 }
+// 1. Define your color palette
+$universe-dark-blue:   #0b1e3a;
+$universe-golden-brown:#a67b5b;
+$universe-golden-green:#556b2f;
+$universe-beige:       #f5f5dc;
+
+// 2. Base gradient background
+body {
+  background: linear-gradient(
+    to bottom,
+    $universe-dark-blue 20%,
+    $universe-golden-brown 60%,
+    $universe-beige 100%
+  );
+  position: relative;
+  overflow: hidden;
+}
+
+// 3. Starfield — randomly place tiny “stars” via box-shadows
+@mixin starfield($count) {
+  $shadows: ();
+  @for $i from 1 through $count {
+    $x: random(100) * 1%;
+    $y: random(100) * 1%;
+    $opacity: random(50) / 100;
+    $shadows: append($shadows, #{$x} #{$y} rgba(255,255,255,$opacity), comma);
+  }
+  width: 1px;
+  height: 1px;
+  background: transparent;
+  box-shadow: $shadows;
+}
+
+body::before {
+  @include starfield(200);     // try 200–500 for density
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  // spans full viewport via the heavy box-shadows
+  pointer-events: none;
+  animation: twinkle 4s infinite ease-in-out alternate;
+}
+
+// small pulsing to mimic distant stars
+@keyframes twinkle {
+  to { opacity: 0.6; }
+}
+
+// 4. Shooting-star mixin & spots
+@mixin shooting-star($top, $left, $delay) {
+  &::after {
+    content: "";
+    position: absolute;
+    top: $top;
+    left: $left;
+    width: 2px;
+    height: 2px;
+    background: rgba(255,255,255,0.8);
+    border-radius: 50%;
+    box-shadow: 0 0 6px rgba(255,255,255,0.8);
+    animation: shoot 1.2s linear $delay infinite;
+  }
+}
+
+// place a handful of shooting stars at different offsets
+body::after {
+  @include shooting-star(10%, 30%, 0s);
+  @include shooting-star(25%, 80%, 3s);
+  @include shooting-star(60%, 50%, 6s);
+  @include shooting-star(40%, 20%, 9s);
+}
+
+// 5. Shooting-star trajectory
+@keyframes shoot {
+  0% {
+    transform: translate(0, 0) scale(0.5);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-300px, 300px) scale(1.2);
+    opacity: 0;
+  }
+}
+
 
 body.fixed-top-nav {
   // Add some padding for the nav-bar.
