@@ -1,42 +1,89 @@
 function createShootingStar() {
+  const container = document.querySelector('.shooting-star');
   const star = document.createElement('div');
   star.className = 'star';
   
-  // Start from the top third of the screen
-  const startY = Math.random() * (window.innerHeight / 3);
-  star.style.top = startY + 'px';
-  star.style.left = '0';
+  // Calculate the center content width (approximately 800px)
+  const centerWidth = 800;
+  const windowWidth = window.innerWidth;
+  const sideWidth = (windowWidth - centerWidth) / 2;
   
-  // Random delay between 0-2 seconds
-  star.style.animationDelay = Math.random() * 2 + 's';
-  
-  // Add to container
-  const container = document.querySelector('.shooting-star');
-  container.appendChild(star);
-  
-  // Remove star after animation completes
-  star.addEventListener('animationend', () => {
-    star.remove();
-  });
-}
-
-function initShootingStars() {
-  // Create container if it doesn't exist
-  let container = document.querySelector('.shooting-star');
-  if (!container) {
-    container = document.createElement('div');
-    container.className = 'shooting-star';
-    document.body.appendChild(container);
+  // Random starting position in left or right panel
+  let startX;
+  let isLeftPanel;
+  if (Math.random() < 0.5) {
+    // Left panel
+    startX = Math.random() * sideWidth;
+    isLeftPanel = true;
+  } else {
+    // Right panel
+    startX = windowWidth - sideWidth + Math.random() * sideWidth;
+    isLeftPanel = false;
   }
   
+  const startY = Math.random() * (window.innerHeight / 3); // Start from top third of screen
+  
+  star.style.left = startX + 'px';
+  star.style.top = startY + 'px';
+  
+  // Add panel-specific animation
+  if (isLeftPanel) {
+    star.style.animation = 'shootLeft 3s linear infinite';
+  } else {
+    star.style.animation = 'shootRight 3s linear infinite';
+  }
+  
+  // Random delay
+  star.style.animationDelay = Math.random() * 2 + 's';
+  
+  container.appendChild(star);
+  
+  // Remove the star after animation completes
+  setTimeout(() => {
+    star.remove();
+  }, 3000);
+}
+
+// Create shooting stars periodically
+function initShootingStars() {
+  const container = document.createElement('div');
+  container.className = 'shooting-star';
+  document.body.appendChild(container);
+  
+  // Add panel-specific animations
+  const style = document.createElement('style');
+  style.textContent = `
+    @keyframes shootLeft {
+      0% {
+        transform: translateX(0) translateY(0) rotate(45deg);
+        opacity: 1;
+      }
+      100% {
+        transform: translateX(300px) translateY(400px) rotate(45deg);
+        opacity: 0;
+      }
+    }
+    @keyframes shootRight {
+      0% {
+        transform: translateX(0) translateY(0) rotate(45deg);
+        opacity: 1;
+      }
+      100% {
+        transform: translateX(300px) translateY(400px) rotate(45deg);
+        opacity: 0;
+      }
+    }
+  `;
+  document.head.appendChild(style);
+  
   // Create initial stars
-  for (let i = 0; i < 5; i++) {
+  for (let i = 0; i < 10; i++) {
     createShootingStar();
   }
   
-  // Create new star every 2 seconds
-  setInterval(createShootingStar, 2000);
+  // Create new stars periodically
+  setInterval(createShootingStar, 1000); // Create a new star every second
 }
 
-// Initialize when page loads
+// Initialize when the page loads
 document.addEventListener('DOMContentLoaded', initShootingStars); 
