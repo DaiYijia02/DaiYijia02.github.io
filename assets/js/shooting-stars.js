@@ -28,7 +28,7 @@ function createShootingStar() {
   
   // Add panel-specific animation
   if (isLeftPanel) {
-    star.style.animation = 'shootLeft 3s linear infinite';
+    star.style.animation = 'shootLeft 2s linear infinite';
   } else {
     star.style.animation = 'shootRight 3s linear infinite';
   }
@@ -41,7 +41,7 @@ function createShootingStar() {
   // Remove the star after animation completes
   setTimeout(() => {
     star.remove();
-  }, 3000);
+  }, isLeftPanel ? 2000 : 3000);
 }
 
 // Create shooting stars periodically
@@ -86,7 +86,7 @@ function initShootingStars() {
         opacity: 0.05;
       }
       100% {
-        transform: translateX(300px) translateY(400px) rotate(45deg);
+        transform: translateX(200px) translateY(267px) rotate(45deg);
         opacity: 0;
       }
     }
