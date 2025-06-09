@@ -3,8 +3,8 @@
  ******************************************************************************/
 
 :root {
-  --global-bg-color: #f6f8f0;
-  --global-code-bg-color: #e3e7b6;
+  --global-bg-color: #f0f2f8;
+  --global-code-bg-color: rgba(0,0,0,.1);
   --global-text-color: #544702;
   --global-text-color-light: #6b5900;
   --global-theme-color: #9e8401;
@@ -49,11 +49,11 @@
 
 html[data-theme='dark'] {
   --global-bg-color: #{$grey-color-dark};
-  --global-code-bg-color: #70b8fc2b;
+  --global-code-bg-color: #22476948;
   --global-text-color: #f5f5e7;
   --global-text-color-light: #f5f5e7;
-  --global-theme-color: #70b8fc;
-  --global-hover-color: #70b8fc;
+  --global-theme-color: #6d91b2;
+  --global-hover-color: #85a8c9;
   --global-hover-text-color: #{$white-color};
   --global-footer-bg-color: #{$grey-color-light};
   --global-footer-text-color: #{$grey-color-dark};
