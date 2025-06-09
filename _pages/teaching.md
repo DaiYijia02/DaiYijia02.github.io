@@ -7,7 +7,7 @@ nav: true
 nav_order: 2
 ---
 
-<h3 class="mt-3"> 🌱 Cornell University</h3>
+<h3 class="mt-3">𓀀 Cornell University</h3>
 
 <div class="card mt-3">
   <div class="p-3">
@@ -126,5 +126,19 @@ nav_order: 2
     </div>
     <h6 class="font-italic mt-2 mt-sm-0">Fall 2021: AEW Facilitator</h6>
     <h6 class="mt-2 mt-sm-0">The linear algebra <a href="https://classes.cornell.edu/browse/roster/FA21/class/MATH/2940" target="_blank">core course</a> for engineering students at Cornell, taught by Prof. <a href="https://pi.math.cornell.edu/~ebs/" target="_blank">Ed Swartz</a>.</h6>
+  </div>
+</div>
+
+<h3 class="mt-3">𓀁 X Academy</h3>
+
+<div class="card mt-3">
+  <div class="p-3">
+    <div class="row">
+      <div class="col-sm-10">
+        <h5 class="font-weight-bold">Computational Social Science</h5>
+      </div>
+    </div>
+    <h6 class="font-italic mt-2 mt-sm-0">Summer 2021: Academic Leader</h6>
+    <h6 class="mt-2 mt-sm-0">A <a href="https://info.xacademy.cc/en/" target="_blank">place</a> where people learn fun things and innovate. My course was the philosophical aspects of how large ML systems could impact human society.</h6>
   </div>
 </div>

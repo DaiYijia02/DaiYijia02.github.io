@@ -7,6 +7,7 @@
     <meta http-equiv="refresh" content="3; url={{ site.baseurl }}/" />
   {%- endif -%}
   {% include head.html %}
+  <link rel="stylesheet" href="{{ '/assets/css/shooting-stars.css' | relative_url }}">
   </head>
 
   <!-- Google tag (gtag.js) -->
@@ -68,5 +69,6 @@
     {% include scripts/mathjax.html %}
     {% include scripts/analytics.html %}
     {% include scripts/progressBar.html %}
+    <script src="{{ '/assets/js/shooting-stars.js' | relative_url }}"></script>
   </body>
 </html>
