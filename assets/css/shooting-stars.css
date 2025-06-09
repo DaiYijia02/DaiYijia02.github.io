@@ -12,10 +12,22 @@
   position: absolute;
   width: 2px;
   height: 2px;
-  background: white;
+  background: var(--global-theme-color);
   border-radius: 50%;
   animation: shoot 3s linear infinite;
   opacity: 0;
+  box-shadow: 0 0 3px 1px var(--global-theme-color);
+}
+
+.star::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 100px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--global-theme-color));
+  transform: translateY(-50%);
 }
 
 @keyframes shoot {

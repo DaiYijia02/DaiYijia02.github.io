@@ -5,13 +5,13 @@ function createShootingStar() {
   
   // Random starting position
   const startX = Math.random() * window.innerWidth;
-  const startY = Math.random() * (window.innerHeight / 2);
+  const startY = Math.random() * (window.innerHeight / 3); // Start from top third of screen
   
   star.style.left = startX + 'px';
   star.style.top = startY + 'px';
   
   // Random delay
-  star.style.animationDelay = Math.random() * 3 + 's';
+  star.style.animationDelay = Math.random() * 2 + 's';
   
   container.appendChild(star);
   
@@ -28,12 +28,12 @@ function initShootingStars() {
   document.body.appendChild(container);
   
   // Create initial stars
-  for (let i = 0; i < 5; i++) {
+  for (let i = 0; i < 10; i++) {
     createShootingStar();
   }
   
   // Create new stars periodically
-  setInterval(createShootingStar, 2000);
+  setInterval(createShootingStar, 1000); // Create a new star every second
 }
 
 // Initialize when the page loads
