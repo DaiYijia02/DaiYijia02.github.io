@@ -51,4 +51,26 @@
   .star::before {
     background: linear-gradient(90deg, transparent, var(--global-theme-color));
   }
+}
+
+// Text selection styles
+::selection {
+  background: var(--global-bg-color);
+  color: var(--global-text-color);
+}
+
+::-moz-selection {
+  background: var(--global-bg-color);
+  color: var(--global-text-color);
+}
+
+// Overscroll behavior
+html {
+  overscroll-behavior: none;
+  background-color: var(--global-bg-color);
+}
+
+body {
+  overscroll-behavior: none;
+  background-color: var(--global-bg-color);
 } 
