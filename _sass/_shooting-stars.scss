@@ -6,6 +6,8 @@
   height: 100%;
   pointer-events: none;
   z-index: 9999;
+  background: transparent;
+  mix-blend-mode: normal;
 }
 
 .star {
@@ -16,6 +18,7 @@
   border-radius: 50%;
   box-shadow: 0 0 2px var(--global-theme-color);
   opacity: 0;
+  mix-blend-mode: normal;
 }
 
 .star::before {
@@ -27,6 +30,7 @@
   height: 1px;
   background: linear-gradient(90deg, transparent, var(--global-theme-color));
   transform: translateY(-50%);
+  mix-blend-mode: normal;
 }
 
 @keyframes shootLeft {
@@ -131,8 +135,12 @@
 // Background color for bounce effect
 html {
   background-color: var(--global-bg-color);
+  -webkit-background-color: var(--global-bg-color);
 }
 
 body {
   background-color: var(--global-bg-color);
+  -webkit-background-color: var(--global-bg-color);
+  position: relative;
+  z-index: 1;
 } 
