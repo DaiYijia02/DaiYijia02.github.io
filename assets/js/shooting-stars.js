@@ -1,5 +1,7 @@
 function createShootingStar() {
   const container = document.querySelector('.shooting-star');
+  if (!container) return; // Guard against missing container
+  
   const star = document.createElement('div');
   star.className = 'star';
   
@@ -28,9 +30,9 @@ function createShootingStar() {
   
   // Add panel-specific animation
   if (isLeftPanel) {
-    star.style.animation = 'shootLeft 2s linear infinite';
+    star.style.animation = 'shootLeft 2s linear forwards';
   } else {
-    star.style.animation = 'shootRight 3s linear infinite';
+    star.style.animation = 'shootRight 3s linear forwards';
   }
   
   // Random delay
@@ -40,103 +42,31 @@ function createShootingStar() {
   
   // Remove the star after animation completes
   setTimeout(() => {
-    star.remove();
+    if (star.parentNode === container) {
+      star.remove();
+    }
   }, isLeftPanel ? 2000 : 3000);
 }
 
 // Create shooting stars periodically
 function initShootingStars() {
+  // Remove existing container if any
+  const existingContainer = document.querySelector('.shooting-star');
+  if (existingContainer) {
+    existingContainer.remove();
+  }
+  
   const container = document.createElement('div');
   container.className = 'shooting-star';
   document.body.appendChild(container);
   
-  // Add panel-specific animations
-  const style = document.createElement('style');
-  style.textContent = `
-    @keyframes shootLeft {
-      0% {
-        transform: translateX(0) translateY(0) rotate(45deg);
-        opacity: 1;
-      }
-      20% {
-        opacity: 1;
-      }
-      30% {
-        opacity: 0.95;
-      }
-      40% {
-        opacity: 0.9;
-      }
-      50% {
-        opacity: 0.8;
-      }
-      60% {
-        opacity: 0.7;
-      }
-      70% {
-        opacity: 0.5;
-      }
-      80% {
-        opacity: 0.3;
-      }
-      90% {
-        opacity: 0.15;
-      }
-      95% {
-        opacity: 0.05;
-      }
-      100% {
-        transform: translateX(200px) translateY(267px) rotate(45deg);
-        opacity: 0;
-      }
-    }
-    @keyframes shootRight {
-      0% {
-        transform: translateX(0) translateY(0) rotate(45deg);
-        opacity: 1;
-      }
-      20% {
-        opacity: 1;
-      }
-      30% {
-        opacity: 0.95;
-      }
-      40% {
-        opacity: 0.9;
-      }
-      50% {
-        opacity: 0.8;
-      }
-      60% {
-        opacity: 0.7;
-      }
-      70% {
-        opacity: 0.5;
-      }
-      80% {
-        opacity: 0.3;
-      }
-      90% {
-        opacity: 0.15;
-      }
-      95% {
-        opacity: 0.05;
-      }
-      100% {
-        transform: translateX(300px) translateY(400px) rotate(45deg);
-        opacity: 0;
-      }
-    }
-  `;
-  document.head.appendChild(style);
-  
   // Create initial stars
-  for (let i = 0; i < 10; i++) {
+  for (let i = 0; i < 5; i++) {
     createShootingStar();
   }
   
   // Create new stars periodically
-  setInterval(createShootingStar, 1000); // Create a new star every second
+  setInterval(createShootingStar, 2000); // Create a new star every 2 seconds
 }
 
 // Initialize when the page loads

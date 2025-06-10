@@ -129,7 +129,7 @@ nav_order: 2
   </div>
 </div>
 
-<h3 class="mt-3">𓀁 X Academy</h3>
+<h3 class="mt-5">𓀁 X Academy</h3>
 
 <div class="card mt-3">
   <div class="p-3">
