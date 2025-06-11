@@ -143,4 +143,11 @@ body {
   -webkit-background-color: var(--global-bg-color);
   position: relative;
   z-index: 1;
+}
+
+// Fix for Safari overscroll background
+html, body {
+  min-height: 100%;
+  background: var(--global-bg-color);
+  -webkit-background: var(--global-bg-color);
 } 
