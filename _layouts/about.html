@@ -52,10 +52,12 @@ layout: default
             {%- include latest_posts.html %}
           {%- endif %}
 
-          <!-- Selected papers -->
+          <!-- Publications -->
           {% if page.selected_papers -%}
-            <h2 class="mt-5"><a href="{{ '/publications/' | relative_url }}" style="color: inherit;">Publications</a></h2>
-            {%- include selected_papers.html %}
+            <h2 class="mt-5">Publications</h2>
+            <div class="publications">
+              {% bibliography -f {{ site.scholar.bibliography }} %}
+            </div>
           {%- endif %}
 
           <!-- Social -->
