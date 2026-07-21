@@ -6,7 +6,7 @@ title: Yijia Dai
 first_name: Yijia
 middle_name:
 last_name: Dai
-email: yd73@cornell.edu
+email: #
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
 
 footer_text: >
@@ -69,7 +69,7 @@ og_image: # The site-wide (default for all links) Open Graph preview image
 # Social integration
 # -----------------------------------------------------------------------------
 
-github_username: DaiYijia02 # your GitHub user name
+github_username: # your GitHub user name
 gitlab_username: # your GitLab user name
 twitter_username: yijia_dai # your Twitter handle
 mastodon_username: # your mastodon instance+username in the format instance.tld/@username
