@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: CS PhD @ [Cornell](https://www.cs.cornell.edu). 问心无愧.
+subtitle: CS Ph.D. Student @ [Cornell](https://www.cs.cornell.edu). 问心无愧.
 
 
 profile:
@@ -19,6 +19,6 @@ social: true  # includes social icons at the bottom of the page
 
 👋 ▫️ 👍 👀 ❕
 
-I am a rising third-year Ph.D. student co-advised by Prof. [Sarah Dean](https://sdean.website) and Prof. [Jennifer Sun](https://jenjsun.com/) at Cornell. I am currently also a visiting student researcher at [Branson Lab](https://www.janelia.org/lab/branson-lab), [HHMI Janelia Research Campus](https://www.hhmi.org/research/janelia).
+I am a third-year Ph.D. student at Cornell, co-advised by Prof. [Sarah Dean](https://sdean.website) and Prof. [Jennifer Sun](https://jenjsun.com/). I am also a visiting student researcher in the [Branson Lab](https://www.janelia.org/lab/branson-lab) at [HHMI Janelia Research Campus](https://www.hhmi.org/research/janelia).
 
-A goal that I have is building AI systems to discover new knowledges in the real world that benefits our daily lives. And I am curious to understand how and why the current deep learning models work so well.  
+I am interested in deep generative models across domains, from language to biological signals—understanding how strong models succeed on well-understood tasks, and using them to uncover new structure in less-understood signals from nature.
